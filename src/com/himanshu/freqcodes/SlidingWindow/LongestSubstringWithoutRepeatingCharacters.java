@@ -14,7 +14,6 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
 
         String str = String.valueOf(arr);
-//        String str = "abcabcbb";
         System.out.println(str);
 
         int res = longestSubstring(str);
@@ -44,10 +43,9 @@ public class LongestSubstringWithoutRepeatingCharacters {
             if (map.get(str.charAt(j)) == 0) {
                 map.put(str.charAt(j), 1);
                 res = Math.max(res, j - i + 1);
-                System.out.println(str.substring(i, j+1));
+                System.out.println(str.substring(i, j + 1));
                 j++;
-            }
-            else {
+            } else {
                 map.put(str.charAt(i), 0);
                 i++;
             }
