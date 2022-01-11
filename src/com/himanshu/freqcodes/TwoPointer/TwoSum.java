@@ -1,6 +1,9 @@
 package com.himanshu.freqcodes.TwoPointer;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
     public static void main(String[] args) {
