@@ -23,10 +23,7 @@ public class RotatedSortedArray {
         }
 
         System.out.println("The array is:...");
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println("");
+        System.out.println(Arrays.toString(arr));
         //Array generated till this point
 
         System.out.println("Generating the numbers to find...");
