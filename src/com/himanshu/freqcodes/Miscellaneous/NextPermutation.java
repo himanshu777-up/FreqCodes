@@ -44,7 +44,7 @@ public class NextPermutation {
         //Now sort the remaining of the array, but since it is already sorted in descending order, we need to just reverse it
         int l =  len-1;
         while(l>i){
-            swap(arr, i+1, l);
+            swap(arr, i+1, l);  //starting with (i+1) as we don't want to swap the ith element
             l--;
             i++;
         }
