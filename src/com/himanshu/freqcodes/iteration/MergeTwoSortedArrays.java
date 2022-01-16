@@ -5,18 +5,18 @@ import java.util.Arrays;
 public class MergeTwoSortedArrays {
     public static void main(String[] args) {
 
-        int n1 = (int)(Math.random()*(10-1)+1);
-        int n2 = (int)(Math.random()*(10-1)+1);
+        int n1 = (int) (Math.random() * (10 - 1) + 1);
+        int n2 = (int) (Math.random() * (10 - 1) + 1);
 
         int[] arr1 = new int[n1];
         int[] arr2 = new int[n2];
 
-        for(int i =0;i<n1;i++){
-            arr1[i] = (int)(Math.random()*(100-1)+1);
+        for (int i = 0; i < n1; i++) {
+            arr1[i] = (int) (Math.random() * (100 - 1) + 1);
         }
 
-        for(int i =0;i<n2;i++){
-            arr2[i] = (int)(Math.random()*(100-1)+1);
+        for (int i = 0; i < n2; i++) {
+            arr2[i] = (int) (Math.random() * (100 - 1) + 1);
         }
 
         Arrays.sort(arr1);
@@ -38,17 +38,16 @@ public class MergeTwoSortedArrays {
 
         //The trick here is to decide which element should reside in which array
         //once that's done, sort the arrays at the end
-        int i = n1-1, j = 0;
+        int i = n1 - 1, j = 0;
 
-        while(i>=0 && j<n2){
-            if(arr1[i]>arr2[j]){
-                int temp  = arr1[i];
+        while (i >= 0 && j < n2) {
+            if (arr1[i] > arr2[j]) {
+                int temp = arr1[i];
                 arr1[i] = arr2[j];
                 arr2[j] = temp;
                 i--;
                 j++;
-            }
-            else{
+            } else {
                 break;
             }
         }
