@@ -9,9 +9,19 @@ public class StringPermutations {
     public static void main(String[] args) {
 
         //Permutations of a given string
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter the string to permute...");
-        String str = scn.next();
+//        Scanner scn = new Scanner(System.in);
+//        System.out.println("Enter the string to permute...");
+//        String str = scn.next();
+
+        char[] arr = new char[4];
+        System.out.println("Generating the string...");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (char) (Math.random() * (122 - 97) + 97);
+//            System.out.println(arr[i]);
+        }
+
+        String str = String.valueOf(arr);
+        System.out.println(str);
 
         List<String> res = new ArrayList<String>();
         permute(str, res, "");
