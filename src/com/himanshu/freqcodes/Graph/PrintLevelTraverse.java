@@ -9,7 +9,11 @@ public class PrintLevelTraverse {
         Set<String> Parents = new HashSet<>();
         Map<String, HashSet<String>> treeMap = new HashMap<>();
 
-        String[] stringList = new String[]{"java.util.vector", "java.util.date", "org.json.JSONObject", "java.util.regex.Pattern", "org.writequit.Strings"};
+        String[] stringList = new String[]{"java.util.vector",
+                                            "java.util.date",
+                                            "org.json.JSONObject",
+                                            "java.util.regex.Pattern",
+                                            "org.writequit.Strings"};
 
         for (String string : stringList) {
             String[] temp = string.split("[.]");
