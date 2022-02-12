@@ -44,8 +44,8 @@ public class MaximumNonOverlappingBridges {
         int[] south = new int[numberOfBridges];
 
         for (int i = 0; i < numberOfBridges; i++) {
-            int x = (int) (Math.random() * (10 - 1) + 1);
-            int y = (int) (Math.random() * (10 - 1) + 1);
+            int x = (int) (Math.random() * (100 - 1) + 1);
+            int y = (int) (Math.random() * (100 - 1) + 1);
             north[i] = x;
             south[i] = y;
         }
