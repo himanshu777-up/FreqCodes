@@ -1,6 +1,5 @@
 package com.himanshu.freqcodes.DPmatrix;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 class Bridge implements Comparable<Bridge> {
