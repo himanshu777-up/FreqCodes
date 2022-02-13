@@ -22,6 +22,9 @@ public class MinimumPlatforms {
 
         int i = 0, j = 0;
 
+        //The logic here is to find the maximum number of trains that may occur at any point of time
+        //So, basically, the minimum platforms is the maximum trains at any point of time
+
         while (i < n && j < n) {
 
             if (arr[i] <= dep[j]) {
