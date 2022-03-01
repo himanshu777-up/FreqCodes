@@ -8,10 +8,6 @@ public class StringPermutations {
     public static void main(String[] args) {
 
         //Permutations of a given string
-//        Scanner scn = new Scanner(System.in);
-//        System.out.println("Enter the string to permute...");
-//        String str = scn.next();
-
         char[] arr = new char[4];
         System.out.println("Generating the string...");
         for (int i = 0; i < arr.length; i++) {
@@ -22,7 +18,7 @@ public class StringPermutations {
         String str = String.valueOf(arr);
         System.out.println(str);
 
-        List<String> res = new ArrayList<String>();
+        List<String> res = new ArrayList<>();
         permute(str, res, "");
 
         System.out.println(res);
