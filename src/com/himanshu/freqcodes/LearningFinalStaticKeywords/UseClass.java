@@ -3,7 +3,10 @@ package com.himanshu.freqcodes.LearningFinalStaticKeywords;
 public class UseClass {
 
     public static void main(String[] args) {
-        Sample s1 = new Sample();
+
+
+
+         Sample s1 = new Sample();
 //        s1.idStatic = 1;
         System.out.println(s1.idFinal);
         System.out.println(s1.idStatic);
@@ -30,6 +33,7 @@ public class UseClass {
         System.out.println("**************************************************************************************");
 
         System.out.println(s1.idFinalStatic);
+
 
     }
 }
