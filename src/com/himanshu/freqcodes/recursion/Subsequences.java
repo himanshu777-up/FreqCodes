@@ -19,7 +19,7 @@ public class Subsequences {
 
     private static void subseq(List<String> res, String ques, String ans) {
 
-        System.out.println("ques is   "+ ques+"   and ans is    "+ans);
+        System.out.println("ques is   " + ques + "   and ans is    " + ans);
         if (ques.length() == 0) {
             res.add(ans);
             return;
