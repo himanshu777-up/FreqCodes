@@ -14,5 +14,13 @@ public class Driver {
         System.out.println("-------------------------------------");
         vehicle.printSome();
         ((Cars) vehicle).printNow();
+
+        int a = 100;
+        double b = 200.5;
+
+        int c = (int)b;
+        double d = (double)a;
+        System.out.println(c+"   "+d);
+
     }
 }
