@@ -5,7 +5,7 @@ public class Driver {
     public static void main(String[] args) {
 
         Cars car = new Cars();
-//        Cars c1 = new Vehicle();
+//        Cars c1 = (Cars) new Vehicle();
         Vehicle vehicle = new Cars();
 
         car.printNow();
@@ -14,7 +14,5 @@ public class Driver {
         System.out.println("-------------------------------------");
         vehicle.printSome();
         ((Cars) vehicle).printNow();
-
-
     }
 }
