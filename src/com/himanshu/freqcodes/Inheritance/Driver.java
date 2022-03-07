@@ -1,10 +1,26 @@
 package com.himanshu.freqcodes.Inheritance;
 
+class Demo{
+
+    static void show(){
+        System.out.println("static method of the parent");
+    }
+
+}
+
+class Sample extends Demo{
+
+    static void show(){
+        System.out.println("Static method of the child");
+    }
+}
+
+
 public class Driver {
 
     public static void main(String[] args) {
 
-        Cars car = new Cars();
+        /*Cars car = new Cars();
 //        Cars c1 = (Cars) new Vehicle();
         Vehicle vehicle = new Cars();
 
@@ -20,7 +36,17 @@ public class Driver {
 
         int c = (int)b;
         double d = (double)a;
-        System.out.println(c+"   "+d);
+        System.out.println(c+"   "+d);*/
+
+        Demo d1 = new Demo();
+        Demo d2 = new Sample();
+        Sample d3 = new Sample();
+
+        d1.show();
+        d2.show();
+        d3.show();
+
+        //Method hiding is resolved by the reference types
 
     }
 }

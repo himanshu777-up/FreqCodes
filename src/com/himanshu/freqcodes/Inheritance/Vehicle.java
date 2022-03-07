@@ -6,6 +6,9 @@ public class Vehicle {
 
     int tyres;
     int gears;
+    public int res (int a, int b){
+        return a+b;
+    }
 
     public Vehicle(int tyres, int gears) {
         this.tyres = tyres;

@@ -18,4 +18,9 @@ public class Cars extends Vehicle{
     public void printNow(){
         System.out.println("in child class");
     }
+
+    @Override
+    public int res (int x, int y){
+        return (int) (x+y);
+    }
 }
