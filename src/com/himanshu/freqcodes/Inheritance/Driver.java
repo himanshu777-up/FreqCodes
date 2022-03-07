@@ -1,16 +1,16 @@
 package com.himanshu.freqcodes.Inheritance;
 
-class Demo{
+class Demo {
 
-    static void show(){
+    static void show() {
         System.out.println("static method of the parent");
     }
 
 }
 
-class Sample extends Demo{
+class Sample extends Demo {
 
-    static void show(){
+    static void show() {
         System.out.println("Static method of the child");
     }
 }
@@ -46,7 +46,18 @@ public class Driver {
         d2.show();
         d3.show();
 
-        //Method hiding is resolved by the reference types
+        //Method hiding is resolved by the reference types, as static methods are resolved by reference types
+
+        Cars car = new Cars();
+        Vehicle v1 = new Cars();
+        Vehicle v2 = new Vehicle();
+        car.printSome();
+        v1.printSome();
+        v2.printSome();
+
+        Man man = new Man();
+        System.out.println(man.age);
+        man.showDetails();
 
     }
 }
