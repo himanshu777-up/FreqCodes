@@ -9,4 +9,17 @@ public class Man implements Person{
     public Man() {
 
     }
+
+    @Override
+    public void fun() {
+        System.out.println("deaule one updated");
+    }
+
+    public static void main(String[] args) {
+        Man man = new Man();
+        man.fun();
+        man.fun2();
+    }
 }
+
+
