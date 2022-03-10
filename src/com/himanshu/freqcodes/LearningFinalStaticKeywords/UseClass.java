@@ -5,8 +5,9 @@ class Parent {
     final int limit;
     static final int num = 5;
 
-    Parent() {
-        limit = 500;
+    Parent(int limit) {
+//        limit = 500;
+        this.limit = limit;
 
     }
 }
@@ -47,8 +48,8 @@ public class UseClass {
         System.out.println("----------------------------------------------------------------------------------");
         System.out.println("----------------------------------------------------------------------------------");
 
-        Parent p1 = new Parent();
-        Parent p2 = new Parent();
+        Parent p1 = new Parent(234);
+        Parent p2 = new Parent(346);
         Parent.age = 100;
         p1.age++;
         p2.age++;
@@ -60,6 +61,8 @@ public class UseClass {
         System.out.println(p1.limit);
         System.out.println(p2.limit);
         System.out.println(p1.num);
+
+
 
     }
 }

@@ -24,7 +24,7 @@ public class CountScatterPalindrome_copy {
                 answer += m.getOrDefault(x ^ (1 << i), 0);
             }
             m.put(x, m.getOrDefault(x, 0) + 1);
-            System.out.println(m);
+//            System.out.println(m);
         }
 
 //        System.out.println(m);

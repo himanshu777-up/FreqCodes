@@ -19,6 +19,10 @@ public class UnderstansingMaps {
         map.put(p5, 5);
 
         System.out.println(map.size());
+        for(Person p: map.keySet()){
+            System.out.print(p);
+            System.out.println("   "+map.get(p));
+        }
 
         Map<Integer, Object> m = new HashMap<>();
         m.put(1, null);

@@ -38,7 +38,7 @@ public class NumberUsingGivenNumbers {
         }
 
         for (int i : resource) {
-            if (i <= n && i >= min) { //added min to have only unique comninations (non repeating), so its an increasing sequence
+            if (i <= n && i >= min) { //added min to have only unique combinations (non repeating), so its an increasing sequence
                 ans.add(i);
                 printways(res, n - i, resource, ans, i);
                 ans.remove(ans.size() - 1);

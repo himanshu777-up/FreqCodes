@@ -18,10 +18,10 @@ public class CheckPalindrome {
 
     private static boolean ifPal(String str) {
         int n = str.length();
-        if(n==1)    return true;
-        if(n==2){
-            return (str.charAt(0) == str.charAt(1));
-        }
+        if(n==1 || n==0)    return true;
+//        if(n==2){
+//            return (str.charAt(0) == str.charAt(1));
+//        }
         if(str.charAt(0)!=str.charAt(n-1)){
             return false;
         }
