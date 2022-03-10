@@ -1,5 +1,7 @@
 package com.himanshu.freqcodes.understandingthreads;
 
+import java.util.*;
+
 class Task extends Thread {
     @Override
     public void run() {
@@ -57,6 +59,34 @@ class MyThread1 extends Thread{
     }
 }
 
+class Player{
+    int age;
+    int rank;
+    Player(int age, int rank){
+        this.age = age;
+        this.rank = rank;
+    }
+}
+class PlayerCom implements Comparator<Player>{
+
+    @Override
+    public int compare(Player o1, Player o2) {
+        return o1.age - o2.age;
+    }
+}
+
+class Cricket implements Comparable<Cricket>{
+    int age;
+    Cricket(int age){
+        this.age = age;
+    }
+
+    @Override
+    public int compareTo(Cricket o) {
+        return Integer.compare(age , o.age);
+    }
+}
+
 public class ThreadBasics {
 
     //Code to understand two things
@@ -91,6 +121,37 @@ public class ThreadBasics {
         MyThread m2= new MyThread(p);
         m2.start();
         System.out.println("App stopped");
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(1); pq.add(2);   pq.add(3);  pq.add(4); pq.offer(10);
+        pq.remove(2);
+
+        System.out.println(pq);
+
+        List<Player> players = new ArrayList<>();
+        players.add(new Player(1, 1));
+        players.add(new Player(2, 5));
+        players.add(new Player(3, 2));
+        players.add(new Player(4, 9));
+        PlayerCom playerCom = new PlayerCom();
+        Collections.sort(players, playerCom);
+
+        for(Player player: players){
+            System.out.println(player.age+"    "+player.rank);
+        }
+
+        List<Cricket> crickets = new ArrayList<>();
+        for(int i =0;i<10;i++){
+            crickets.add(new Cricket(100-i));
+        }
+        Collections.sort(crickets);
+        for(Cricket c: crickets){
+            System.out.print(c.age+"   ");
+        }
+
+
     }
+
+
 
 }
