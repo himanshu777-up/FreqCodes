@@ -1,9 +1,12 @@
 package com.himanshu.freqcodes.LearningFinalStaticKeywords;
 
+import com.himanshu.freqcodes.JAVAConcepts.Person;
+
 class Parent {
     static int age;
     final int limit;
     static final int num = 5;
+    final int temp = 100;
 
     Parent(int limit) {
 //        limit = 500;
@@ -61,6 +64,10 @@ public class UseClass {
         System.out.println(p1.limit);
         System.out.println(p2.limit);
         System.out.println(p1.num);
+        System.out.println(Parent.num);
+
+
+
 
 
 

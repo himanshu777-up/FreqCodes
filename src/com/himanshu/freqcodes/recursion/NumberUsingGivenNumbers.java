@@ -11,13 +11,13 @@ public class NumberUsingGivenNumbers {
 
         System.out.println("Enter the number to be formed...");
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-
+//        int n = scn.nextInt();
+        int n = 50;
         System.out.println("Enter the resources...");
-        int[] resource = new int[3];
-        resource[0] = scn.nextInt();
-        resource[1] = scn.nextInt();
-        resource[2] = scn.nextInt();
+        int[] resource = new int[]{1, 5, 6};
+//        resource[0] = scn.nextInt();
+//        resource[1] = scn.nextInt();
+//        resource[2] = scn.nextInt();
 
         Arrays.sort(resource);
         ArrayList<ArrayList<Integer>> res = new ArrayList<>();
