@@ -1,21 +1,48 @@
-package UnderstandingExceptions;
+package com.himanshu.freqcodes.UnderstandingExceptions;
 
 import java.util.Scanner;
+class MyExc extends Exception{
+    public MyExc(String message) {
+        super(message);
+    }
+}
+
 
 public class ExcUnd {
+
+    static int b;
+    static int a;
+    private static int fun(){
+        b += a;
+        return b;
+
+    }
+
+    static void validate(int a) throws MyExc {
+        if(a<0){
+            throw new MyExc("put a bigger number please");
+        }
+    }
+
     public static void main(String[] args) {
 
 
         int n;
         Scanner scn = new Scanner(System.in);
         n = scn.nextInt();
-        func(n);
 
-        func2(n);
+        try {
+            validate(n);
+        }
+        catch (MyExc e){
+            System.out.println("exc found");
+            System.out.println(e.getMessage());
+        }
+
 
 
     }
-
+/*
     private static void func2(int n) {
 
         while (n-- > 0) {
@@ -45,7 +72,7 @@ public class ExcUnd {
         }
 
 
-    }
+    }*/
 
 
 }
